@@ -6,23 +6,27 @@ This repository contains R scripts for bulk RNA-seq analysis using Salmon quanti
 Workflow
 --------
 
-1.  Import Salmon quantification files using `tximeta`
+1.  Build a Salmon transcriptome index
 
-2.  Create a DESeq2 dataset
+2.  Quantify transcript abundance using Salmon
 
-3.  Filter low-count genes
+3.  Import Salmon quantification files using `tximeta`
 
-4.  Perform rlog transformation
+4.  Create a DESeq2 dataset
 
-5.  Generate PCA plot
+5.  Filter low-count genes
 
-6.  Run differential expression analysis
+6.  Perform rlog transformation
 
-7.  Export significant, upregulated and downregulated genes
+7.  Generate PCA plot
 
-8.  Generate volcano plots
+8.  Run differential expression analysis
 
-9.  Generate heatmap of selected differentially expressed genes
+9.  Export significant, upregulated and downregulated genes
+
+10.  Generate volcano plots
+
+11.  Generate heatmap of selected differentially expressed genes
 
 Input files
 -----------
@@ -48,9 +52,11 @@ Scripts
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ text
 scripts/
-├── 01_deseq2_analysis.R
-├── 02_volcano_plot.R
-└── 03_heatmap_visualization.R
+├── 01_salmon_index.sh
+├── 02_salmon_quant.sh
+├── 03_deseq2_analysis.R
+├── 04_volcano_plot.R
+└── 05_heatmap_visualization.R
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Outputs
