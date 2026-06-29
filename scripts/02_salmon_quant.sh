@@ -25,4 +25,4 @@ echo "Quantification completed."
 echo "Output file: $OUTPUT_DIR/quant.sf"
 
 # Inside the output directory you will find:
-# quant.sf - transcript-level abundance estimates
+# quant.sf - transcript level abundance estimates
